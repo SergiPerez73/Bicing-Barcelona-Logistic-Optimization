@@ -10,11 +10,13 @@ Finally, you can run the project by running the project in the `Main` file of th
 
 ## Detailed explanation of the project
 In this project, we generate cities with different number of stations in different points of a map. Each city has a seed number, and you can generate a random city by introducing a random number in the seed when you generate it. Each station also contains the number of bikes that has at the start and a prediction of the number of bikes that should have for the next hour, taking into account the demand. The more bikes we have in a station until we reach the demand, the better. 
+
 To transport bikes, we can select as many vans as we want and transport bikes from one station to another on a trip. Each trip has a starting point, a destination where we leave a certain number of bikes, and an optional second destination. Each van can only do one trip, and we take into account the cost of the trips on the basis of the travelled distance and the number of bikes that are inside the van (which are 30 at most).
 
 ## Algorithms
 
 As finding an optimal solution to this problem is very complex, we use instead artificial intelligence algorithms where we generate an initial solution and we modify this solution with some operators to search for a better solution.
+
 In Hill Climbing algorithm, we modify the solution with the best operator possible for each case until we reach a point where we can't improve with our operators.
 In Simulated Annealing, we modify the solution with a random operator out of the ones we have, and we continue with this generated solution if it improves. In some randomly selected cases, we can also continue if it doesn't improve, but this becomes more unlikely as the time passes.
 
