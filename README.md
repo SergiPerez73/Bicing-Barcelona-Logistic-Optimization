@@ -38,5 +38,7 @@ The `Documentación Práctica Búsqueda Local.pdf` file contains a more detailed
 
 ## Authors
 Sergi Pérez Escalante (Code and tests)
+
 Diego Velilla Recio (Tests)
+
 Pablo Buxó Hernando (Tests)
